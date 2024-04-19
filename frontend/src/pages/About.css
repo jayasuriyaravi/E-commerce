@@ -1,0 +1,36 @@
+.about-row1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(../assets/saree1.jpg);
+    min-height: 100px;
+    padding: 20px;
+    color: white;
+}
+
+Link {
+    color: ;
+}
+
+.abt-img {
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+}
+
+.about-row2 {
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.about-row3 {
+    padding: 20px;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.about-row4 {
+    padding: 20px;
+    font-size: 18px;
+    line-height: 35px;
+    margin-bottom: 30px;
+}

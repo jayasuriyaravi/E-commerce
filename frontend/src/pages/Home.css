@@ -1,0 +1,24 @@
+.row1 {
+    background-color: antiquewhite;
+}
+
+.row2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(../assets/img3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    background-attachment: fixed;
+}
+
+.btn-exp {
+    width: 150px;
+    background-color: rgb(81, 37, 118);
+    color: white;
+    font-size: 18px;
+}
+
+.text{
+    margin: 15px;
+    font-size: 25px;
+}
+

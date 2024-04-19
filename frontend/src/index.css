@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+}
+
+.nav-bg {
+    background-color: rgb(81, 37, 118);
+    color: white;
+}
+
+.small-nav {
+    font-size: 20px;
+}
+
+.brand {
+    font-size: 30px;
+}
+
+.footer-bg {
+    background-color: rgb(81, 37, 118);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.card:hover .card-body {
+    display: block;
+}
+
+.btn-form {
+    width: 150px;
+    background-color: rgb(81, 37, 118);
+    color: white;
+    font-size: 18px;
+    border: 0;
+}
+
+.inp {
+    border-radius: 30px;
+}
