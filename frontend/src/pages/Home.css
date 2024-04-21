@@ -9,6 +9,9 @@
     min-height: 500px;
     background-attachment: fixed;
 }
+.btn-exp:hover {
+    background-color: rgb(54, 22, 81);
+}
 
 .btn-exp {
     width: 150px;
@@ -21,4 +24,5 @@
     margin: 15px;
     font-size: 25px;
 }
+
 

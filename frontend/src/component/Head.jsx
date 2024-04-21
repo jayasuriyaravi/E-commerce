@@ -7,9 +7,12 @@ import cartIcon from '../assets/cartIcon.png';
 import logo from '../assets/logo3.jpg';
 
 function Head() {
+    const googleLocationLink = 'https://www.google.com/search?q=KCT&oq=KCT&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQLhhA0gEINDY0M2owajGoAgCwAgA&sourceid=chrome&ie=UTF-8';
+
+
     return (
         <>
-            <nav className="navbar navbar-expand-lg sticky-top px-5 nav-bg">
+            <nav className="navbar navbar-expand-lg sticky-top  navbar-dark  nav-bg"> {/* Change navbar-dark to navbar-light */}
                 <div className="container-fluid px-5">
                     <Link className="navbar-brand text-light" to="/">
                         Clothify <img src={logo} alt="" width="50px" height="50px" />
@@ -32,14 +35,16 @@ function Head() {
                                 <img src={heartIcon} alt="" width="20px" height="20px" />
                             </li>
                             <li className="nav-item m-3">
-                                <img src={userIcon} alt="" width="20px" height="20px" />
+                                <Link to="/signup">
+                                    <img src={userIcon} alt="" width="20px" height="20px" />
+                                </Link>
                             </li>
-                            <li className="nav-item m-3">
-                                <img src={searchIcon} alt="" width="20px" height="20px" />
+                            <li className="nav-item m-3 text-light ">
+                                <img src={searchIcon} alt="" width="20px" height="20px" />Search
                             </li>
-                            <li className="nav-item m-3">
+                            <a href={googleLocationLink} className="nav-item m-3">
                                 <img src={locationIcon} alt="" width="20px" height="20px" />
-                            </li>
+                            </a>
                         </ul>
                         <div className="nav-item dropdown m-3">
                             <a
@@ -52,11 +57,9 @@ function Head() {
                                 Need Help?
                             </a>
                             <ul className="dropdown-menu">
-                                <li className="dropdown-item">Name</li>
-                                <li>
-                                    <a className="dropdown-item navbar-text" href="">
-                                        Logout
-                                    </a>
+                                <li className="dropdown-item"><b>Email:</b> kctcollege@gmail.com</li>
+                                <li className="dropdown-item">
+                                    <b>PhoneNo:</b>9999999999
                                 </li>
                             </ul>
                         </div>
@@ -68,7 +71,6 @@ function Head() {
                     </div>
                 </div>
             </nav>
-
 
             {/* adding the pages navigations */}
             <ul className="nav justify-content-center small-nav m-3 ">
@@ -83,14 +85,35 @@ function Head() {
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link navbar-text" href="#">
+                    <Link className="nav-link navbar-text" href="#" to='/product'>
                         Shop
-                    </a>
+                    </Link>
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link navbar-text" href="#" tabIndex="-1" aria-disabled="true" to="/contact">
                         Contact
                     </Link>
+                </li>
+                <li className="nav-item dropdown">
+                    <a className="nav-link navbar-text dropdown-toggle text-black" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Curated Collection
+                    </a>
+                    <ul className="dropdown-menu dropdown-menu-columns" aria-labelledby="navbarDropdown">
+                        <div className="row">
+                            <div className="col">
+                                <li><Link className="dropdown-item" to="/wedding-silk">Wedding Silk</Link></li>
+                                <li><Link className="dropdown-item" to="/benares-silk">Benares Silk</Link></li>
+                                <li><Link className="dropdown-item" to="/raw-silk">Raw Silk</Link></li>
+                                <li><Link className="dropdown-item" to="/mysore-silk">Mysore Silk</Link></li>
+                            </div>
+                            <div className="col">
+                                <li><Link className="dropdown-item" to="/bridal-collection">Bridal Collection</Link></li>
+                                <li><Link className="dropdown-item" to="/tussar-silk-saree">Tussar Silk Saree</Link></li>
+                                <li><Link className="dropdown-item" to="/soft-silk">Soft Silk</Link></li>
+                                <li><Link className="dropdown-item" to="/muslin">Muslin</Link></li>
+                            </div>
+                        </div>
+                    </ul>
                 </li>
             </ul>
         </>
