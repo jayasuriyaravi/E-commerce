@@ -10,7 +10,7 @@ import { useSpring, animated } from 'react-spring';
 function Home() {
     const slideRight = useSpring({ marginLeft: 0, from: { marginLeft: -100 }, config: { duration: 1000 } });
     const fadeIn = useSpring({ opacity: 1, from: { opacity: 0 }, config: { duration: 1000 } });
-    const slideUp = useSpring({ marginTop: 0, from: { marginTop: 100 }, config: { duration: 1000 } });
+    // const slideUp = useSpring({ marginTop: 0, from: { marginTop: 100 }, config: { duration: 1000 } });
 
     return (
         <div className="container-fluid m-0">
@@ -55,10 +55,6 @@ function Home() {
 
             <div className="row3 row my-5 justify-content-center">
                 <h1 className='text-center'>NEW ARRIVALS</h1>
-                <Bcard />
-                <Bcard />
-                <Bcard />
-                <Bcard />
                 <Bcard />
             </div>
 

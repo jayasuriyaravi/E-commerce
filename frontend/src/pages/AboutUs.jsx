@@ -6,7 +6,7 @@ function AboutUs() {
     return (
         <>
         
-            <div className="about-row1 row">
+            <div className="navlink-row1 row">
                 <p><Link to="/">Home</Link> / About Us</p>
             </div>
 

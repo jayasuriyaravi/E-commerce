@@ -11,13 +11,6 @@ import Product from './pages/Product';
 
 function App() {
 
-  const products1 = {
-    name:"Sareee",
-    img:"./assets/cartIcon.png",
-    old_price:"8000",
-    new_price:"6000"
-  }
-
   return (
     <>
       {/* adding the routing to all pages */}
@@ -30,8 +23,9 @@ function App() {
           <Route path="/product" element={<Product />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/products/:id" element={<ProductDisplay />} />
+          <Route path="/product/:category" element={<Product/>} />
         </Routes>
-        <ProductDisplay products1={products1}></ProductDisplay>
         <Footer />
       </Router>
     </>

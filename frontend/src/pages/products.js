@@ -31,7 +31,7 @@ const products = [
         productName: "Mysore Silk Saree",
         oldPrice: 2200,
         newPrice: 1800,
-        img: "saree1.jpg",
+        img: "saree3.jpg",
         description: "Rich Mysore silk saree adorned with traditional motifs.",
         categories: ["Mysore Silk"]
     },
@@ -40,7 +40,7 @@ const products = [
         productName: "Tussar Silk Saree",
         oldPrice: 2500,
         newPrice: 2000,
-        img: "saree1.jpg",
+        img: "saree2.jpg",
         description: "Luxurious Tussar silk saree known for its texture and sheen.",
         categories: ["Tussar Silk Saree"]
     },

@@ -85,12 +85,12 @@ function Head() {
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link navbar-text" href="#" to='/product'>
+                    <Link to="/product" className="nav-link navbar-text">
                         Shop
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link navbar-text" href="#" tabIndex="-1" aria-disabled="true" to="/contact">
+                    <Link to="/contact" className="nav-link navbar-text">
                         Contact
                     </Link>
                 </li>
@@ -101,16 +101,16 @@ function Head() {
                     <ul className="dropdown-menu dropdown-menu-columns" aria-labelledby="navbarDropdown">
                         <div className="row">
                             <div className="col">
-                                <li><Link className="dropdown-item" to="/wedding-silk">Wedding Silk</Link></li>
-                                <li><Link className="dropdown-item" to="/benares-silk">Benares Silk</Link></li>
-                                <li><Link className="dropdown-item" to="/raw-silk">Raw Silk</Link></li>
-                                <li><Link className="dropdown-item" to="/mysore-silk">Mysore Silk</Link></li>
+                                <li><Link className="dropdown-item" to="/product/Wedding%20Silk">Wedding Silk</Link></li>
+                                <li><Link className="dropdown-item" to="/product/Benares%20Silk">Benares Silk</Link></li>
+                                <li><Link className="dropdown-item" to="/product/Raw%20Silk">Raw Silk</Link></li>
+                                <li><Link className="dropdown-item" to="/product/Mysore%20Silk">Mysore Silk</Link></li>
                             </div>
                             <div className="col">
-                                <li><Link className="dropdown-item" to="/bridal-collection">Bridal Collection</Link></li>
-                                <li><Link className="dropdown-item" to="/tussar-silk-saree">Tussar Silk Saree</Link></li>
-                                <li><Link className="dropdown-item" to="/soft-silk">Soft Silk</Link></li>
-                                <li><Link className="dropdown-item" to="/muslin">Muslin</Link></li>
+                                <li><Link className="dropdown-item" to="/product/Bridal%20Collection">Bridal Collection</Link></li>
+                                <li><Link className="dropdown-item" to="/product/Tussar%20Silk%20Saree">Tussar Silk Saree</Link></li>
+                                <li><Link className="dropdown-item" to="/product/Soft%20Silk">Soft Silk</Link></li>
+                                <li><Link className="dropdown-item" to="/product/Muslin">Muslin</Link></li>
                             </div>
                         </div>
                     </ul>

@@ -2,7 +2,7 @@
 
 function Footer() {
     return (
-        <footer className="text-light footer-bg mt-5 ">
+        <footer className="text-light footer-bg mt-5">
             {/* Grid container */}
             <div className="container-fluid p-4">
                 {/*Grid row*/}

@@ -2,6 +2,13 @@
     margin: 0;
 }
 
+.navlink-row1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(./assets/saree1.jpg);
+    min-height: 100px;
+    padding: 20px;
+    color: white;
+}
+
 .nav-bg {
     background-color: rgb(81, 37, 118);
     color: white;
@@ -45,4 +52,23 @@ body {
 
 .inp {
     border-radius: 30px;
+}
+
+
+
+/* product page css */
+.column-left-menu {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    /* Adjust as needed */
+    overflow-y: auto;
+    /* Enable vertical scrolling if content exceeds height */
+}
+
+.column-right-product {
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    height: 100vh;
+    /* Adjust as needed */
 }
