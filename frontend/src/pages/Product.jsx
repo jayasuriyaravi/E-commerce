@@ -58,10 +58,10 @@ function Product() {
     return (
         <div className="container-fluid">
             <div className="navlink-row1 row">
-                <p><Link to="/">Home</Link> / Shop</p>
+                <p><Link className='navPageLink' to="/">Home</Link> / Shop</p>
             </div>
             <div className="row">
-                <div className="col text-light sticky-top column-left-menu" style={{ backgroundColor: 'rgb(81, 37, 118)' }}>
+                <div className="col text-light column-left-menu" style={{ backgroundColor: 'rgb(81, 37, 118)' }}>
                     <div className="container">
                         <form>
                             <div className="form-group mb-3">
@@ -94,7 +94,7 @@ function Product() {
                         {sortedProducts.map(product => (
                             <Link key={product.id} to={`/products/${product.id}`} className="card p-0 m-3" style={{ width: '23rem', textDecoration: 'none', color: 'inherit' }}>
                                 <div className="card-body">
-                                    <img className="card-img-top" src={`/src/assets/${product.img}`} alt={product.productName} />
+                                    <img className="card-img-top" src={'/src/assets/' + product.img} alt={product.productName} />
                                     <h5 className="card-title mt-3">{product.productName}</h5>
                                     <p className="card-text">Price: ${product.newPrice}</p>
                                 </div>

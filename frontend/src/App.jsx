@@ -8,24 +8,27 @@ import ProductDisplay from './pages/ProductDisplay';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Product from './pages/Product';
+import Cart from './pages/Cart';
+import { CartProvider } from './component/CartContext';
 
 function App() {
-
   return (
     <>
-      {/* adding the routing to all pages */}
       <Router>
         <Head />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/aboutus" element={<AboutUs />} />
-          <Route path="/contact" element={<ContactForm />} />
-          <Route path="/product" element={<Product />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/products/:id" element={<ProductDisplay />} />
-          <Route path="/product/:category" element={<Product/>} />
-        </Routes>
+        <CartProvider>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/aboutus" element={<AboutUs />} />
+            <Route path="/contact" element={<ContactForm />} />
+            <Route path="/product" element={<Product />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/products/:id" element={<ProductDisplay />} />
+            <Route path="/product/:category" element={<Product />} />
+            <Route path="/cart" element={<Cart />} />
+          </Routes>
+        </CartProvider>
         <Footer />
       </Router>
     </>

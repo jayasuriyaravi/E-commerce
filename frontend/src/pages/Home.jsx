@@ -5,6 +5,7 @@ import img4 from '../assets/img4.jpg'
 import './Home.css';
 import Bcard from '../component/Bcard';
 import { useSpring, animated } from 'react-spring';
+import { Link } from 'react-router-dom';
 
 
 function Home() {
@@ -21,7 +22,7 @@ function Home() {
                             <h1 className='text-center'>
                                 A Symphony of Heritage And style
                             </h1>
-                            <button className='btn text-light m-4 p-2 btn-exp'> SHOP NOW</button>
+                            <Link to="/product" className='btn text-light m-4 p-2 btn-exp'> SHOP NOW</Link>
                         </animated.div>
                     </div>
                     <div className="col" style={{ backgroundColor: "rgb(81, 37, 118)", padding: "0px" }}>
@@ -47,9 +48,9 @@ function Home() {
                         Our newest silk arrivals await!
                         Don’t miss out, shop now at Sri Mahalakshmi Silks!
                     </p>
-                    <button className='btn btn-exp m-3 p-3'>
+                    <Link to="/product" className='btn btn-exp m-3 p-3'>
                         Explore Now
-                    </button>
+                    </Link>
                 </div>
             </animated.div>
 
@@ -68,7 +69,7 @@ function Home() {
                             Elevate your style
                             in the threads of tradition
                         </h1>
-                        <button className='btn text-light m-4 p-2 btn-exp'> SHOP NOW</button>
+                        <Link to="/product" className='btn text-light m-4 p-2 btn-exp'> SHOP NOW</Link>
                     </div>
                     <div className="row mt-5  ">
                         <div className="col">

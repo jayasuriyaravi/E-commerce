@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import searchIcon from '../assets/searchIcon.png';
 import locationIcon from '../assets/locationIcon.png';
 import userIcon from '../assets/userIcon.png';
-import heartIcon from '../assets/heartIcon.png';
+// import heartIcon from '../assets/heartIcon.png';
 import cartIcon from '../assets/cartIcon.png';
 import logo from '../assets/logo3.jpg';
 
@@ -31,19 +31,21 @@ function Head() {
                     </button>
                     <div className="collapse navbar-collapse text-center" id="navbarText">
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0 text-black">
-                            <li className="nav-item m-3">
+                            {/* <li className="nav-item m-3">
                                 <img src={heartIcon} alt="" width="20px" height="20px" />
-                            </li>
+                            </li> */}
                             <li className="nav-item m-3">
                                 <Link to="/signup">
                                     <img src={userIcon} alt="" width="20px" height="20px" />
                                 </Link>
                             </li>
+
                             <li className="nav-item m-3 text-light ">
                                 <img src={searchIcon} alt="" width="20px" height="20px" />Search
                             </li>
-                            <a href={googleLocationLink} className="nav-item m-3">
-                                <img src={locationIcon} alt="" width="20px" height="20px" />
+
+                            <a href={googleLocationLink} className="nav-item m-3 location">
+                                <img src={locationIcon} alt="" width="20px" height="20px" /> FIND A STORE
                             </a>
                         </ul>
                         <div className="nav-item dropdown m-3">
@@ -64,9 +66,9 @@ function Head() {
                             </ul>
                         </div>
                         <ul className="navbar-nav  mb-2 mb-lg-0 text-light">
-                            <li className="nav-item m-3 ">
+                            <Link to="/cart" className="nav-item m-3 ">
                                 <img src={cartIcon} alt="" width="20px" height="20px" />
-                            </li>
+                            </Link>
                         </ul>
                     </div>
                 </div>
@@ -80,17 +82,17 @@ function Head() {
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/aboutus" className="nav-link navbar-text" >
+                    <Link to="/aboutus" className="nav-link navbar-text head-nav" >
                         About Us
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/product" className="nav-link navbar-text">
+                    <Link to="/product" className="nav-link navbar-text head-nav">
                         Shop
                     </Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/contact" className="nav-link navbar-text">
+                    <Link to="/contact" className="nav-link navbar-text head-nav">
                         Contact
                     </Link>
                 </li>

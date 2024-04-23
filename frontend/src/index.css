@@ -7,6 +7,16 @@
     min-height: 100px;
     padding: 20px;
     color: white;
+    font-size: 16px;
+}
+
+.navPageLink{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.navPageLink:hover {
+    text-decoration: underline;
 }
 
 .nav-bg {
@@ -18,7 +28,7 @@
     font-size: 18px;
 }
 .small-nav li:hover{
-    color:rgb(81, 37, 118) ;
+    color:rgb(255, 0, 0) ;
 }
 
 .brand {
@@ -71,4 +81,8 @@ body {
     /* Enable vertical scrolling */
     height: 100vh;
     /* Adjust as needed */
+}
+.location{
+    text-decoration: none;
+    color: white;
 }
