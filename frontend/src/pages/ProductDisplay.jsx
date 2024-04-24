@@ -27,34 +27,44 @@ function ProductDisplay() {
                     {product.productName}- {product.id}
                 </p>
             </div>
-            <div className="row dis-row justify-content-center p-3">
-                {/* <div className="productdisplay-img-list col-2 p-3 mx-5">
-                    {[1, 2, 3, 4].map(index => (
-                        <div key={index} className="row">
-                            <img src={'/src/assets/' + product.img} alt={product.productName} className="img-fluid" height="20%" width="20%"/>
-                        </div>
-                    ))}
+            <div className="row justify-content-center p-5">
+                {/* <div className="col-2 p-3">
+                    <div className="row small-img-container" style={{ backgroundImage: `url('/src/assets/saree1.jpg')` }}>
+                        <img src={'/src/assets/' + product.img} alt={product.productName} className="img-fluid small-img" />
+                    </div>
+                    <div className="row small-img-container">
+                        <img src={'/src/assets/' + product.img} alt="" className="img-fluid small-img" />
+                    </div>
+                    <div className="row small-img-container">
+                        <img src={'/src/assets/' + product.img} alt="" className="img-fluid small-img" />
+                    </div>
+                    <div className="row small-img-container">
+                        <img src={'/src/assets/' + product.img} alt="" className="img-fluid small-img" />
+                    </div>
                 </div> */}
-                <div className="col p-3">
+                <div className="col-md-6 p-5">
                     {/* Display main product image */}
-                    <img src={'/src/assets/' + product.img} alt={product.productName} className='img-fluid' width="80%"/>
+                    <img src={'/src/assets/' + product.img} alt={product.productName} className="img-thumbnail" width="100%" height="100%" />
                 </div>
-                <div className="col p-5">
+                <div className="col-md-6 p-5">
                     {/* Display product details */}
-                    <h1 className='product-name mb-3'>{product.productName}</h1>
+                    <h1 className="product-name mb-3">{product.productName}</h1>
                     <div className="row">
-                        <p className='product-price'>
+                        <p className="product-price">
                             Price:
-                            <span className='old-price'>{product.oldPrice}</span>
-                            <span className='new-price'>{product.newPrice}</span>
+                            <span className="old-price">{product.oldPrice}</span>
+                            <span className="new-price">{product.newPrice}</span>
                         </p>
                     </div>
-                    <p className='product-desc'>{product.description}</p>
+                    <p className="product-desc">{product.description}</p>
                     <button onClick={handleAddToCart} className="btn btn-exp btn-cart">ADD TO CART</button>
-                    <p className='categories'><span className='cat-heading'>Category :</span> {product.categories.join(', ')}</p>
+                    <p className="categories">
+                        <span className="cat-heading">Category :</span> {product.categories.join(', ')}
+                    </p>
                 </div>
             </div>
-           
+
+
         </div>
     );
 }

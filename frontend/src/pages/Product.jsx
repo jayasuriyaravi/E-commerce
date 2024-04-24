@@ -94,7 +94,7 @@ function Product() {
                         {sortedProducts.map(product => (
                             <Link key={product.id} to={`/products/${product.id}`} className="card p-0 m-3" style={{ width: '23rem', textDecoration: 'none', color: 'inherit' }}>
                                 <div className="card-body">
-                                    <img className="card-img-top" src={'/src/assets/' + product.img} alt={product.productName} />
+                                    <img className="card-img-top" src={`/src/assets/${product.img}`} alt={product.productName} style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
                                     <h5 className="card-title mt-3">{product.productName}</h5>
                                     <p className="card-text">Price: ${product.newPrice}</p>
                                 </div>

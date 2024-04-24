@@ -27,6 +27,6 @@
 .cat-heading{
     font-weight: bold;
 }
-.dis-row{
-    max-height: 600px;
+.small-img-container{
+    height: 100px;
 }
