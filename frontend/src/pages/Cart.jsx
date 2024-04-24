@@ -16,8 +16,8 @@ function Cart() {
     const totalAmount = cartItems.reduce((total, item) => total + (item.newPrice * item.quantity), 0);
 
     return (
-        <div className="container my-5">
-            <h1 className="text-center my-5">Your Cart</h1>
+        <div className="container">
+            <h1 className="text-center">Your Cart</h1>
 
             {/* Displaying cart items */}
             <div className="cart-container">
@@ -26,10 +26,10 @@ function Cart() {
                         <div className="col-md">
                             <div className="card">
                                 <div className="row g-0">
-                                    <div className="col-md-4">
+                                    <div className="col-md-4 col-sm-4 ">
                                         <img src={`/src/assets/${item.img}`} className="img-fluid rounded-start" alt="Product Image" style={{ width: '100%', height: '150px', objectFit: 'cover' }} />
                                     </div>
-                                    <div className="col-md-8">
+                                    <div className="col-md-8 col-sm-8">
                                         <div className="card-body">
                                             <h5 className="card-title">{item.productName}</h5>
                                             <p className="card-text">Price: {item.newPrice}</p>
